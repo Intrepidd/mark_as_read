@@ -6,6 +6,8 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require 'mark_as_read'
+require "rails_app/config/environment"
+require 'rspec/rails'
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
