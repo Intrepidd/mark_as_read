@@ -1,5 +1,3 @@
-require 'active_model'
-
 class FooModel
   include MarkAsRead::Readable
   extend ActiveModel::Naming
