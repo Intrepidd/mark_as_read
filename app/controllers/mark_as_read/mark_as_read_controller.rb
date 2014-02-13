@@ -10,7 +10,7 @@ module MarkAsRead
       model = type.find(verifier.verify(params[:id]))
       raise InvalidType.new("Type #{type} does not include mark_as_read") unless model.respond_to?(:mark_as_read!)
       model.mark_as_read!
-      render :nothing => true
+      send_data(Base64.decode64("R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="), :type => "image/gif", :disposition => "inline")
     end
 
   end
