@@ -10,4 +10,4 @@ gemfile:
   - gemfiles/Gemfile.rails-edge
 matrix:
   allow_failures:
-    - gemfile: gemfiles/Gemfile.rails-head
+    - gemfile: gemfiles/Gemfile.rails-edge
