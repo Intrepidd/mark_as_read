@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/mark_as_read/:type/:id.gif' => 'mark_as_read/mark_as_read#read'
+  get '/mark_as_read/:type/:id.gif' => 'mark_as_read/mark_as_read#read', :as => 'mark_as_read'
 end
