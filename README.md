@@ -20,23 +20,24 @@ Or install it yourself as:
 ## Usage
 
 Let's say you have a ``Message`` class, simply add the following to describe the behavior to execute when a message is read:
+````ruby
+class Message < ActiveRecord::Base
 
-    class Message < ActiveRecord::Base
+  include MarkAsRead::Readable
 
-      include MarkAsRead::Readable
+  mark_as_read do |message|
+    message.update_attributes(:read => true)
+  end
 
-      mark_as_read do |message|
-        message.update_attributes(:read => true)
-      end
-
-    end
-
+end
+````
 The read message is yielded to the ``mark_as_read`` function so you can do anything you want on it.
 
 
 Then, in your mailer view, you just have to add the tracking image, let's assume you have the message in the ``@message`` variable :
-
-    <%= mark_as_read_img(@message) %>
+````ruby
+<%= mark_as_read_img(@message) %>
+````
     
 ## Disclaimer
 
