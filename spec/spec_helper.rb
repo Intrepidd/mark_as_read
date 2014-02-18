@@ -8,6 +8,9 @@
 require 'mark_as_read'
 require "rails_app/config/environment"
 require 'rspec/rails'
+require 'coveralls'
+
+Coveralls.wear!
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
