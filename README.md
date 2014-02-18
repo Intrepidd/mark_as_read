@@ -1,4 +1,4 @@
-# mark_as_read [![Build Status](https://travis-ci.org/Intrepidd/mark_as_read.png?branch=master)](https://travis-ci.org/Intrepidd/mark_as_read) [![Code Climate](https://codeclimate.com/github/Intrepidd/mark_as_read.png)](https://codeclimate.com/github/Intrepidd/mark_as_read)
+# mark_as_read [![Build Status](https://travis-ci.org/Intrepidd/mark_as_read.png?branch=master)](https://travis-ci.org/Intrepidd/mark_as_read) [![Code Climate](https://codeclimate.com/github/Intrepidd/mark_as_read.png)](https://codeclimate.com/github/Intrepidd/mark_as_read) [![Coverage Status](https://coveralls.io/repos/Intrepidd/mark_as_read/badge.png?branch=master)](https://coveralls.io/r/Intrepidd/mark_as_read?branch=master)
 
 This gem allows you to be notified when one of your users reads an e-mail you sent to him via a tracking gif.
 It's compatible with ruby on rails and any ORM that implements ``find`` and has an ``id`` field for its models.
